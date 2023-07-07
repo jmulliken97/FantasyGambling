@@ -1,0 +1,48 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #4DFFC5;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+  
+  .topnav {
+    background-color: #005a92;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #3ca3ff;
+    color: black;
+  }
+
+  
+  .topnav a.active {
+    background-color: #4DFFC5;
+    color: black;
+  }
+
+
+  
+    
