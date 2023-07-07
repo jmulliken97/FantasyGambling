@@ -1,0 +1,15 @@
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  list-style: none;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: calc(100% / 1 - 10px);
+}
+
+

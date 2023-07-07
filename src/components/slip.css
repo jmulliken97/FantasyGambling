@@ -1,0 +1,72 @@
+.slip-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slip {
+  position: relative; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  width: 50%;
+  max-width: 800px;
+  text-align: center;
+  justify-content: center;
+}
+
+.league-selector {
+  position: absolute; 
+  top: 20px; 
+  right: 40px; 
+}
+
+@media (max-width: 770px) {
+  .slip {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; 
+  }
+}
+
+.slip ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slip-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.slip-item > * {
+  margin-right: 10px;
+}
+
+.risk-amount {
+  width: 70px;
+}
+
+.remove-button {
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 10px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
