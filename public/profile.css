@@ -1,0 +1,300 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #C3FFFF;
+    height: 100vh;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #4DFFC5;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+  
+  .topnav {
+    background-color: #005a92;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #3ca3ff;
+    color: black;
+  }
+
+  .main {
+    text-align: center;
+  }
+  
+  .topnav a.active {
+    background-color: #4DFFC5;
+    color: black;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content.profile h2 {
+    font-size: 28px;
+    color: #005a92;
+    margin-bottom: 20px;
+  }
+  
+  .block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0% auto;
+    text-align: center;
+  }
+  
+  .profile-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3274d6;
+    margin: 20px 5px 0 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    appearance: none;
+    font-size: 14px;
+  }
+  
+  .content.profile .profile-btn:hover {
+    background-color: #2868c7;
+  }
+  
+  .content.profile .block div {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  #user-picks {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .table-wrapper {
+    width: 55%;
+    overflow-x: auto;
+    margin: auto;
+  }
+  
+  #user-picks table {
+    border-collapse: collapse;
+  }
+  
+  #user-picks th,
+  #user-picks td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #user-picks tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #user-picks tr:hover {
+    background-color: #ddd;
+  }
+  
+  #user-picks th {
+    background-color: #4DFFC5;
+    color: black;
+  }
+  
+  
+  h2{
+    text-align: center;
+  }
+
+  .login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login label {
+    display: none;
+  }
+  
+  .login input[type="text"],
+  .login input[type="password"],
+  .login input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .login input[type="submit"] {
+    background-color: #3274d6;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login input[type="submit"]:hover {
+    background-color: #2868c7;
+  }
+
+  .register {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+  
+.register h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+  
+.register form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.register label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+  
+.register input[type="text"],
+.register input[type="password"],
+.register input[type="email"],
+.register input[type="submit"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+.register input[type="submit"] {
+    background-color: #3274d6;
+    color: white;
+    cursor: pointer;
+}
+  
+.register input[type="submit"]:hover {
+    background-color: #2868c7;
+}
+  
+.register input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px; 
+}
+  
+.register .terms {
+    display: inline-block; 
+    font-size: 16px;  
+    padding: 10px 0;  
+    color: #333; 
+}
+  
+.register .terms a {
+    color: #3274d6;
+    display: inline;
+}
+  
+.register .terms a:hover {
+    text-decoration: underline;
+    color: #005a92;  
+}
+
+  .post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .post h2 {
+    font-size: 24px;
+    color: #005a92;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  #total-picks {
+    font-size: 20px;
+    text-align: center;
+    color: #005a92;
+    margin-bottom: 20px;
+}
+
+
+  @media screen and (max-width: 650px) {
+    .post {
+      width: 95%;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 870px) {
+    .register {
+      width: 95%;
+    }
+  }
+  
+  
+  
+ 

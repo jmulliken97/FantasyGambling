@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="profile.css" rel="stylesheet" />
+    <script src="personalsite.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="banner.png" alt="Banner File">
+    </div>
+    <div class="topnav" id="Topnav">
+      <a href="/home" class="mobile-hide">Home</a>
+      <a href="/play" class="mobile-hide">Play</a>
+      <a href="/leagues" class='mobile-hide'>Leagues</a>
+      <a href="/profile" class="mobile-hide">Profile</a>
+      <a href="/development" class="mobile-hide">Development</a>
+      <a href="/register" class="active mobile-hide">Sign Up</a>
+      <a href="/login" class="mobile-hide">Login</a>
+      
+      </a>
+    </div>
+    <div class="register-container">
+		<div class="register">
+      <h1>Register</h1>
+      <form id="registerForm" autocomplete="off">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms" class="terms">
+          I agree to the <a href="./terms.html">Terms of Service</a>
+        </label>
+        <input type="submit" value="Register">
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+  </body>
+</html>
