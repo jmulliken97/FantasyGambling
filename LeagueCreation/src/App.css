@@ -1,0 +1,189 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.App-header {
+  color: black;
+  font-size: 2em;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 4em;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+p {
+  color: #282c34;
+}
+
+.topnav {
+  background-color: #005a92;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #3ca3ff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4DFFC5;
+  color: black;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #4DFFC5;
+  width: 100%;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.league-input, .league-select, .league-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%; /* Set a specific width */
+}
+
+input.range-input {
+  width: 100%; /* Adjust as needed */
+  margin: auto;
+}
+
+select.select-input {
+  width: 100%; /* Adjust as needed */
+  margin: auto;
+}
+
+.league-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.league-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.league-input, .league-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.league-range {
+  width: calc(100% - 10px); 
+  box-sizing: border-box;
+}
+
+.league-select {
+  -webkit-appearance: none;  
+  -moz-appearance: none;     
+  appearance: none;          
+}
+
+.league-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.league-button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.league-form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
+  
+}
+
+.league-form, .join-league-form {
+  margin: 0 20px;
+}
+
+.league-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.league-card h3 {
+  color: #282c34;
+  margin: 10px 0;
+}
+
+.league-card p {
+  color: #282c34;
+  margin: 5px 0;
+}
+
+
+
