@@ -24,6 +24,9 @@ function App() {
       case "NHL":
         sportFile = "processed_icehockey_nhl.json";
         break;
+      case "NFL":
+        sportFile = "processed_football_nfl.json";
+        break;
       default:
         break;
     }
@@ -84,21 +87,26 @@ function App() {
         <button onClick={() => handleSportChange("MLB")}>MLB</button>
         <button onClick={() => handleSportChange("NBA")}>NBA</button>
         <button onClick={() => handleSportChange("NHL")}>NHL</button>
+        <button onClick={() => handleSportChange("NFL")}>NFL</button>
       </div>
       <button className="show-slip-btn" onClick={() => toggleSlip(true)}>
         Show Slip
       </button>
       <div className="games-container">
-        {data.map((game, index) => (
-          <GameContainer
-            key={index}
-            game={game}
-            currentRisk={currentRisk}
-            setCurrentRisk={setCurrentRisk}
-            gameIndex={index}
-            handleAddToSlip={handleAddToSlip}
-          />
-        ))}
+        {data.length > 0 ? (
+          data.map((game, index) => (
+            <GameContainer
+              key={index}
+              game={game}
+              currentRisk={currentRisk}
+              setCurrentRisk={setCurrentRisk}
+              gameIndex={index}
+              handleAddToSlip={handleAddToSlip}
+            />
+          ))
+        ) : (
+          <p>No games available for this sport at the moment.</p> // Placeholder when no data is available
+        )}
       </div>
       <Slip slipItems={slipItems} isOpen={slipOpen} toggleSlip={toggleSlip} updateSlipItems={updateSlipItems} />
     </div>

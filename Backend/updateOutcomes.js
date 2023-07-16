@@ -72,8 +72,6 @@ async function updatePaidStatus() {
 }
 
 
-
-
 // Function to update the outcomes in the "picks" table based on the game results
 async function updateOutcomes(gameResults) {
   try {

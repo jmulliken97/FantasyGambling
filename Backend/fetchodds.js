@@ -134,7 +134,7 @@ async function getSportOdds(sport) {
   }
   
   async function fetchSportsOdds() {
-    const sports = ['baseball_mlb', 'basketball_nba', 'icehockey_nhl'];
+    const sports = ['baseball_mlb', 'basketball_nba', 'icehockey_nhl', 'football_nfl'];
     const promises = sports.map((sport) => getSportOdds(sport));
     await Promise.all(promises);
   }

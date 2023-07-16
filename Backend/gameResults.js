@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-async function fetchGameResults(sports = ['basketball_nba', 'baseball_mlb', 'icehockey_nhl'], daysFrom) {
+async function fetchGameResults(sports = ['basketball_nba', 'baseball_mlb', 'icehockey_nhl', 'football_nfl'], daysFrom) {
   try {
     const apiKey = process.env.SPORTS_API_KEY;
     const dateFormat = 'iso';
